@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></>Andrew Lovatt | Portfolio</title>
+  <title>Andrew Lovatt | Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
+  <style type="text/css">
+  /* Background colours for alternating sections of home page */
   body {
     position: relative; 
   }
-  #about {padding:50px 25px 25px 25px;color: #fff; background-color: #673ab7;}
+  #about {padding:50px 25px 25px 25px;color: #fff; background-color: #0250BC;}
   #skills {padding:50px  25px 25px 25px;color: #000; background-color: #fff;}
-  #cv {padding:50px  25px 25px 25px;color: #fff; background-color: #673ab7;}
+  #cv {padding:50px  25px 25px 25px;color: #fff; background-color: #0250BC;}
   #projects {padding:50px  25px 25px 25px;color: #000; background-color: #fff;}
   #projectsExamples {padding:50px  25px 25px 25px;color: #000; background-color: #fff;}
+  /* Overwrite default color of outline primary button when hovered over applied by Bootstrap */
+  .btn-primary {
+    background-color: #E25821 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+  }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #fff !important;
+    color: #E25821 !important;
+    border-color: #E25821 !important;
+  }
   </style>
 </head>
 <body>
@@ -135,9 +147,50 @@
 
 <div class="container-fluid">
   <div class="row">
+    <div class="col-md-6" style="padding:25px  25px 25px 25px"><h1>Solution Builder</h1>
+      <p>Customers answer 3 questions to build their own solution from a range of products. This project is deployed to a real commercial environment and hosted on a WordPress installation.</p>
+      <p>The solution builder was coded using JavaScript and Document Object Model (DOM).</p>
+      <h2>Features:</h2>
+      <ul>
+        <li>Live calculation of pricing and total cost</li>
+        <li>Individual products recommended based on the answers given</li>
+        <li>Links to more information supplied for each product</li>
+      </ul>
+      <a class="btn btn-primary" href="https://fdstiming.co.uk/?page_id=1038" target="_blank" role="button"><i class="fab fa-firefox"></i> Demo</a>
+      <a class="btn btn-primary" href="https://github.com/Type2Horizon/Type2Horizon.github.io/tree/master/extended-codecademy/javascript/rock-paper-scissors" target="_blank" role="button"><i class="fab fa-github"></i> Code</a>
+    </div>
+    <div class="col-md-6" style="padding:25px  25px 25px 25px"><img class="img-responsive" width="100%" src="images/FDS_solution_builder_preview.png"></div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6" style="padding:25px  25px 25px 25px"><h1>Rock, Paper, Scissors</h1>
+      <p>A rock, paper, scissors game built with JavaScript and independently expanded on outside of the original Codecademy course with an interactive page and scoring system.</p>
+      <h2>Features:</h2>
+      <ul>
+        <li>Computer choice is randomised</li>
+        <li>Graphics representing user and computer choice</li>
+        <li>Score tracked with a point won or lost</li>
+      </ul>
+      <a class="btn btn-primary" href="https://type2horizon.github.io/extended-codecademy/javascript/rock-paper-scissors/rock-paper-scissors.html" target="_blank" role="button"><i class="fab fa-firefox"></i> Demo</a>
+      <a class="btn btn-primary" href="https://github.com/Type2Horizon/FDS_Solution_Builder" target="_blank" role="button"><i class="fab fa-github"></i> Code</a>
+    </div>
+    <div class="col-md-6" style="padding:25px  25px 25px 25px"><img class="img-responsive" width="100%" src="images/rock_paper_scissors_preview.png"></div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
     <div class="col-md-6" style="padding:25px  25px 25px 25px"><h1>Magic Eight Ball</h1>
       <p>A JavaScript project from the Codecademy curriculum that I brought out of the console and on to the web page.</p>
       <p>Using the form fields, the projects gathers the users name and questions and displays them as well as using a random number generator to provide a unique answer each time.</p>
+      <h2>Features:</h2>
+      <ul>
+        <li>Fields to enter name and question</li>
+        <li>Name and choice shown using Document Object Method</li>
+        <li>Randomised answers generated via JavaScript</li>
+      </ul>
       <a class="btn btn-primary" href="https://type2horizon.github.io/extended-codecademy/javascript/magic-eight-ball/magic-eight-ball.html" target="_blank" role="button"><i class="fab fa-firefox"></i> Demo</a>
       <a class="btn btn-primary" href="https://github.com/Type2Horizon/type2horizon.github.io/tree/master/extended-codecademy/javascript/magic-eight-ball" target="_blank" role="button"><i class="fab fa-github"></i> Code</a>
     </div>
@@ -149,10 +202,11 @@
   <div class="row">
     <div class="col-md-12 align-self-center pt-3">
       <p class="text-center" style="color: #673ab7">
-        <a href="https://www.linkedin.com/in/andrew-lovatt-bb540660/" target="_blank" style="color: #673ab7"><i class="fab fa-linkedin fa-3x"></i></a>
-        <a href="https://github.com/andrew-lovatt" target="_blank" style="color: #673ab7"><i class="fab fa-github fa-3x" style="padding-right: 25px;"></i></a>
-        <a href="https://github.com/type2horizon" target="_blank" style="color: #673ab7"><i class="fab fa-github-alt fa-3x"></i></a>
-        <a href="https://twitter.com/Type2Horizon" target="_blank" style="color: #673ab7"><i class="fab fa-twitter fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/andrew-lovatt-bb540660/" target="_blank" style="color: #E25821"><i class="fab fa-linkedin fa-3x"></i></a>
+        <a href="https://github.com/andrew-lovatt" target="_blank" style="color: #E25821"><i class="fab fa-github fa-3x"></i></a>
+        <a href="https://type2horizon.github.io/contact.html" target="_blank" style="color: #E25821"><i class="far fa-envelope fa-3x" style="padding-left: 25px; padding-right: 25px;"></i></a>
+        <a href="https://github.com/type2horizon" target="_blank" style="color: #E25821"><i class="fab fa-github-alt fa-3x"></i></a>
+        <a href="https://twitter.com/Type2Horizon" target="_blank" style="color: #E25821"><i class="fab fa-twitter fa-3x"></i></a>
       </p>
     </div>
   </div>
