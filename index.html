@@ -10,6 +10,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style type="text/css">
   /* Background colours for alternating sections of home page */
+  html {
+  scroll-behavior: smooth;
+  }
   body {
     position: relative; 
   }
@@ -143,18 +146,28 @@
 
 <div id="projects" class="container-fluid">
   <h2><strong>Projects</strong></h2>
+  <!-- Language or Framework Dropdown - to go live when more variety of projects are added
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Language or Framework
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#javascript">JavaScript</a></li>
+    </ul>
+  </div>
+  --> 
 </div>
 
-<div class="container-fluid">
+<div id="javascript" class="container-fluid">
   <div class="row">
     <div class="col-md-6" style="padding:25px  25px 25px 25px"><h1>Solution Builder</h1>
+      <p class="text-muted">HTML, CSS, Bootsrap, JavaScript</p>
       <p>Customers answer 3 questions to build their own solution from a range of products. This project is deployed to a real commercial environment and hosted on a WordPress installation.</p>
       <p>The solution builder was coded using JavaScript and Document Object Model (DOM).</p>
       <h2>Features:</h2>
       <ul>
-        <li>Live calculation of pricing and total cost</li>
         <li>Individual products recommended based on the answers given</li>
-        <li>Links to more information supplied for each product</li>
+        <li>Live calculation of pricing and total cost</li>
+        <li>Answers auto-fill a contact form</li>
       </ul>
       <a class="btn btn-primary" href="https://fdstiming.co.uk/?page_id=1038" target="_blank" role="button"><i class="fab fa-firefox"></i> Demo</a>
       <a class="btn btn-primary" href="https://github.com/andrew-lovatt/FDS_solution_builder" target="_blank" role="button"><i class="fab fa-github"></i> Code</a>
@@ -166,6 +179,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6" style="padding:25px  25px 25px 25px"><h1>Rock, Paper, Scissors</h1>
+      <p class="text-muted">HTML, CSS, Bootsrap, JavaScript</p>
       <p>A rock, paper, scissors game built with JavaScript and independently expanded on outside of the original Codecademy course with an interactive page and scoring system.</p>
       <h2>Features:</h2>
       <ul>
@@ -183,6 +197,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6" style="padding:25px  25px 25px 25px"><h1>Magic Eight Ball</h1>
+      <p class="text-muted">HTML, CSS, Bootsrap, JavaScript</p>
       <p>A JavaScript project from the Codecademy curriculum that I brought out of the console and on to the web page.</p>
       <p>Using the form fields, the projects gathers the users name and questions and displays them as well as using a random number generator to provide a unique answer each time.</p>
       <h2>Features:</h2>
@@ -215,35 +230,6 @@
 <div class="container-fluid">
   <p class="text-center text-white"><small><i class="fas fa-code"></i> Andrew Lovatt</small></p>
 </div>
-
-<script>
-$(document).ready(function(){
-  // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset: 50});   
-
-  // Add smooth scrolling on all links inside the navbar
-  $("#myNavbar a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    }  // End if
-  });
-});
-</script>
 
 </body>
 </html>
